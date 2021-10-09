@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Convert</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <img src="/Конвертрер валют/img/Asset 1@3x 1.png" alt="Bank" class="logo">
+        <ul>
+            <li><a href="#" class="active">Банк</a></li>
+            <li><a href="#">Бизнес</a></li>
+            <li><a href="#">Инвестиции</a></li>
+            <li><a href="#">Страхование</a></li>
+            <li><a href="#">Мобайл</a></li>
+            <li><a href="#">Путешествие</a></li>
+            <li><a href="#">Развлечение</a></li>
+            <li><a href="#" class="active">Войти</a></li>
+        </ul>
+    </header>
+    <section>
+
+        <h1>Конвертрер валют онлайн</h1>
+
+        <div class="have">
+            <p>У меня есть...</p>
+            <p>Хочу приобрести...</p>
+        </div>
+        <div id='currency_box1'>
+            <button onclick='param_first("RUB")' data-type='RUB' class="but">RUB</button>
+            <button onclick='param_first("USD")' data-type='USD' class="but">USD</button>
+            <button onclick='param_first("EUR")' data-type='EUR' class="but">EUR</button>
+            <button onclick='param_first("GBP")' data-type='GBP' class="but">GDR</button>
+        </div>
+        <div class="box_one">
+            <input id='base' oninput="input_value(true)" type="text" class="converter_one">
+        </div>
+        <div id='currency_box2'>
+            <button onclick='param_second("RUB")' data-type='RUB' class="but_second">RUB</button>
+            <button onclick='param_second("USD")' data-type='USD' class="but_second">USD</button>
+            <button onclick='param_second("EUR")' data-type='EUR' class="but_second">EUR</button>
+            <button onclick='param_second("GBP")' data-type='GBP' class="but_second">GDR</button>
+        </div>
+        <div class="box_two">
+            <input id='new' oninput="input_value(false)" type="text" class="converter_two">
+        </div>
+    </section>
+
+
+    <script src="/Конвертрер валют/script.js"></script>
+</body>
+
+</html>
